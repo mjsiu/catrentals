@@ -1,0 +1,26 @@
+<form action=" new_cat_rental_request" method="get">
+
+<br>
+<select name="cat_rental_requests[cat_id]">
+  <% @cats.each do |cat| %>
+    <option value='cat.id'%>> <%= cat.name %></option>
+  <% end %>
+</select>
+</br>
+
+
+<br>
+<label> Start Date </label>
+<input type="date">
+</br>
+
+<br>
+<label> End Dates </label>
+<input type="date">
+</br>
+
+<br>
+  <input type="submit" value="Make Request!">
+</br>
+
+</form>
